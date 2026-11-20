@@ -1,0 +1,376 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKINTIFIC Skincare</title>
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+scroll-behavior: smooth;
+}
+body {
+background: #fff;
+color: #222;
+}
+
+.promo {
+ background: #b8dce8;
+ text-align: center;
+ padding: 12px;
+ font-size: 13px;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 22px 7%;
+border-bottom: 1px solid #eee;
+}
+
+.logo {
+font-size: 28px;
+font-weight: bold;
+letter-spacing: 4px;
+}
+
+nav {
+display: flex;
+gap: 22px;
+}
+
+nav a {
+ text-decoration: none;
+ color: #222;
+ font-size: 14px;
+}
+nav a:hover {
+color: #579bb5;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #eaf6f9;
+}
+
+.hero-text, .hero-image {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 46px;
+margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+.btn {
+display: inline-block;
+background: #222;
+color: white;
+ padding: 13px 25px;
+text-decoration: none;
+border-radius: 4px;
+}
+
+.btn:hover {
+    background: #579bb5;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    text-align: center;
+    background: #f6f9fa;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+    font-size: 17px;
+}
+
+.product p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.about {
+    background: #eef7f9;
+    text-align: center;
+    line-height: 1.9;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.feature {
+    padding: 25px;
+    background: #f5f8f9;
+    border-radius: 8px;
+}
+
+.feature h3 {
+    margin-bottom: 12px;
+}
+
+.contact {
+    background: #eaf6f9;
+    text-align: center;
+    line-height: 2;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 13px;
+}
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 600px) {
+    section {
+        padding: 40px 5%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .products,
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="promo">
+    SKINTIFIC — DISCOVER YOUR SKINCARE ROUTINE
+</div>
+
+<header>
+ <div class="logo">SKINTIFIC</div>
+<nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#advantages">Advantages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text">
+        <p>YOUR SKINCARE, YOUR CONFIDENCE</p>
+        <h1>Healthy Skin Starts Here</h1>
+        <p>
+            Temukan produk perawatan kulit untuk membantu
+            menjaga kelembapan dan merawat kulitmu setiap hari.
+        </p>
+        <a href="#products" class="btn">Explore Products</a>
+    </div>
+
+<div class="hero-image">
+    <img
+        src="https://skintific.com/cdn/shop/files/05_b7b10cf3-5c3f-49f9-a12b-69a31a610636.jpg?v=1775553036&width=1600"
+        alt="SKINTIFIC 5X Ceramide">
+</div>
+</section>
+
+<section id="products">
+    <div class="section-title">
+        <h2>BEST SELLERS</h2>
+        <p>Discover your skincare favorites</p>
+    </div>
+
+ <div class="products">
+        <div class="product">
+        <img
+         src="https://skintific.com/cdn/shop/files/05_b7b10cf3-5c3f-49f9-a12b-69a31a610636.jpg?v=1775553036&width=1600"
+         alt="SKINTIFIC 5X Ceramide">
+
+            <h3>5X Ceramide</h3>
+            <p>Pelembap yang membantu menjaga kelembapan kulit agar tetap lembut dan tidak kering.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+
+        <div class="product">
+      <img
+         src="https://matahari.com/cdn/shop/files/17708537-1_526d4ddf-041e-4061-897c-dd1cd06d1b54.jpg?v=1764436700"
+         alt="SKINTIFIC Mugwort Clay Mask">
+
+            <h3>Mugwort Collection</h3>
+            <p>Mugwort membantu merawat kulit, menyerap minyak berlebih, dan menjaga kulit tetap bersih.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+
+        <div class="product">
+        <img
+         src="https://nihonmart.id/pub/media/catalog/product/cache/8a3fa81d90974d9a7299f2eff309979f/a/l/all_day_light_sunscreen_mist_spf_50_-_var-min.png"
+         alt="SKINTIFIC Sunscreen Mist">
+
+            <h3>Sunscreen</h3>
+            <p>Sunscreen adalah produk yang melindungi kulit dari paparan sinar UV matahari agar kulit tetap terlindungi.</p>
+            <a href="#contact" class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<section id="collection" class="about">
+ <div class="section-title">
+        <h2>SHOP BY COLLECTION</h2>
+    </div>
+    <p>
+        Explore berbagai kategori perawatan kulit,
+        mulai dari cleanser, serum, moisturizer,
+        mask, hingga sunscreen.
+    </p>
+    <br>
+    <a href="https://id.skintific.com/id"
+       class="btn" target="_blank">
+       Official Website
+    </a>
+</section>
+
+<section id="about">
+ <div class="section-title">
+        <h2>ABOUT SKINTIFIC</h2>
+    </div>
+    <div class="about">
+        <p>
+            SKINTIFIC adalah brand skincare yang menyediakan berbagai produk perawatan kulit, seperti moisturizer, serum, masker wajah, dan sunscreen untuk membantu menjaga kesehatan kulit.
+        </p>
+    </div>
+</section>
+
+<section id="advantages">
+    <div class="section-title">
+        <h2>WHY CHOOSE SKINTIFIC?</h2>
+        <p>Kenali berbagai kategori produk skincare</p>
+    </div>
+
+ <div class="features">
+        <div class="feature">
+            <h3>Skin Care</h3>
+            <p>Produk untuk membantu merawat kulit.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Daily Routine</h3>
+            <p>Pilihan produk untuk rutinitas harian.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Various Products</h3>
+            <p>Beragam pilihan sesuai kebutuhan kulit.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="section-title">
+        <h2>CONTACT US</h2>
+    </div>
+    <p>Website resmi: id.skintific.com</p>
+    <p>Email: cs@skintific.com</p>
+    <a href="https://id.skintific.com/id"
+       class="btn" target="_blank">
+       Visit SKINTIFIC
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 SKINTIFIC Website Practice | HTML & CSS</p>
+</footer>
+
+</body>
+</html>
